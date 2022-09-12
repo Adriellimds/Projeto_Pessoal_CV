@@ -12,7 +12,7 @@ body {
   color: rgba(0, 21, 64, 1);
   display: grid;
   margin-top: 2rem;
-  background-color: rgba(239, 193, 207, 1);
+  background-color: #efc1cf;
   background-image: url(/Personal_Project_Icons/background.jpg);
   grid-template-columns: repeat(10, 1fr);
   align-items: center;
@@ -36,6 +36,7 @@ header {
   gap: 2rem;
   list-style: none;
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 .Sign {
   font-family: "Suranna", serif;
@@ -53,12 +54,27 @@ main {
 }
 .FirstBox {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 50rem;
+  grid-gap: 2rem;
   align-items: center;
-  height: 40rem;
-  gap: 2rem;
+}
+.pic {
+  margin-left: 8rem;
+
+  background-image: linear-gradient(#ee80a9 20%, #f77b04 40%, #f8f94f);
+  border-radius: 100%;
+  width: 30rem;
+  height: 30rem;
+  position: relative;
 }
 
+.Profilepic {
+  object-fit: contain;
+  width: 25 rem;
+  position: absolute;
+  left: -0.4rem;
+}
 .Font1 {
   font-family: "Suranna", serif;
   font-size: 4rem;
@@ -88,44 +104,58 @@ main {
   object-fit: contain;
 }
 .SecondBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 40rem;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.habilities {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1fr;
-  height: 30rem;
+.FormacaoAcad {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.AcademicBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50rem;
+  height: 5rem;
+  gap: 1rem;
+}
+.begining1 {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.middle1 {
+  font-size: 1.2rem;
+  display: flex;
+  width: 30rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: left;
+}
+.end1 {
+  display: flex;
+  font-size: 1.2rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.Instlogo {
+  object-fit: contain;
+  width: 10rem;
 }
 .Font3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
-}
-.iconprof {
-  max-width: 4rem;
-  object-fit: contain;
-}
-.FormacaoAcad {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1fr;
-  height: 30rem;
-}
-h2 {
-  font-size: 1rem;
-}
-.fontstyle {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 .Icons {
   display: flex;
@@ -133,19 +163,20 @@ h2 {
   height: 5rem;
 }
 .Thirdbox {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 40rem;
-  gap: 2rem;
-  justify-content: center;
-  align-content: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .ProfessionalBox {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 50rem;
-  justify-content: space-between;
+  height: 5rem;
+  gap: 1rem;
 }
 .Empresa {
   display: flex;
@@ -161,28 +192,29 @@ h2 {
   width: 2rem;
 }
 .begining {
+  display: flex;
   width: 6rem;
   height: 8rem;
   align-items: center;
-  text-align: center;
   font-size: 1.2rem;
+  justify-content: center;
+  flex-direction: column;
 }
 .middle {
   display: flex;
   flex-direction: column;
   width: 30rem;
   height: 8rem;
-  gap: 1rem;
+  align-items: left;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .Text {
   text-align: left;
   justify-content: baseline;
 }
-#Atend {
-  font-size: 1rem;
-}
 .end {
-  width: 10rem;
+  width: auto;
   height: 8rem;
 }
 .Funcao {
@@ -198,14 +230,34 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 10rem;
   height: 6rem;
   align-items: center;
 }
 .habbox {
   background-color: rgba(27, 67, 150, 1);
   width: auto;
-  padding: 0.2rem;
-  height: 1.5rem;
+  padding: 0.4rem;
+  height: 2rem;
   text-align: center;
   color: white;
+}
+.FourthBox {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  gap: 5rem;
+  align-items: center;
+}
+.ContactIconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.ContactIcon {
+  width: 6rem;
+  object-fit: contain;
 }
