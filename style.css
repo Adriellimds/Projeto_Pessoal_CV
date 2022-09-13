@@ -16,6 +16,7 @@ body {
   background-image: url(/Personal_Project_Icons/background.jpg);
   grid-template-columns: repeat(10, 1fr);
   align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -61,7 +62,6 @@ main {
 }
 .pic {
   margin-left: 8rem;
-
   background-image: linear-gradient(#ee80a9 20%, #f77b04 40%, #f8f94f);
   border-radius: 100%;
   width: 30rem;
@@ -78,7 +78,7 @@ main {
 .Font1 {
   font-family: "Suranna", serif;
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 6rem;
 }
 .Font2 {
   font-family: "Suranna", serif;
@@ -249,6 +249,7 @@ main {
   height: 40rem;
   gap: 5rem;
   align-items: center;
+  justify-content: center;
 }
 .ContactIconBox {
   display: flex;
