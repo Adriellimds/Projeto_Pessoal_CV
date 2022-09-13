@@ -13,7 +13,7 @@ body {
   display: grid;
   margin-top: 2rem;
   background-color: #efc1cf;
-  background-image: url(/background.jpg);
+  background-image: url(/Personal_Project_Icons/background.jpg);
   grid-template-columns: repeat(10, 1fr);
   align-items: center;
   justify-content: center;
